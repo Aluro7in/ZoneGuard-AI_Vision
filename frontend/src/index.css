@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* ZoneGuard Neo-Brutalist Industrial Palette */
+  --color-zg-dark-bg: #0B0D12;
+  --color-zg-dark-surface: #151923;
+  --color-zg-dark-elevated: #1D2330;
+  --color-zg-dark-border: #2B3245;
+  --color-zg-dark-border-strong: #3E4861;
+  --color-zg-dark-text: #F6F3EA;
+  --color-zg-dark-muted: #AAB3C4;
+
+  --color-zg-light-bg: #F5F1E7;
+  --color-zg-light-surface: #FFFFFF;
+  --color-zg-light-elevated: #EDE7DA;
+  --color-zg-light-border: #171717;
+  --color-zg-light-border-soft: #D4CDBD;
+  --color-zg-light-text: #171717;
+  --color-zg-light-muted: #51545E;
+
+  --color-zg-cyan: #42DDF2;
+  --color-zg-lime: #D7FF65;
+  --color-zg-violet: #A78BFA;
+  --color-zg-coral: #FF626B;
+  --color-zg-amber: #FFBE55;
+  --color-zg-emerald: #10B981;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html.light {
+  color-scheme: light;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-zg-dark-bg);
+  color: var(--color-zg-dark-text);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+html.light body {
+  background-color: var(--color-zg-light-bg);
+  color: var(--color-zg-light-text);
+}
+
+/* Neo-Brutalist hard-offset shadow utilities */
+.neo-shadow {
+  box-shadow: 3px 3px 0px #000000;
+}
+
+.neo-shadow-sm {
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.neo-shadow-lg {
+  box-shadow: 5px 5px 0px #000000;
+}
+
+.neo-shadow-cyan {
+  box-shadow: 3px 3px 0px #42DDF2;
+}
+
+.neo-shadow-lime {
+  box-shadow: 3px 3px 0px #D7FF65;
+}
+
+.neo-shadow-coral {
+  box-shadow: 3px 3px 0px #FF626B;
+}
+
+html.light .neo-shadow {
+  box-shadow: 3px 3px 0px #171717;
+}
+
+html.light .neo-shadow-sm {
+  box-shadow: 2px 2px 0px #171717;
+}
+
+html.light .neo-shadow-lg {
+  box-shadow: 5px 5px 0px #171717;
+}
+
+/* Industrial custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0D12;
+}
+::-webkit-scrollbar-thumb {
+  background: #2B3245;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #42DDF2;
+}
+
+html.light ::-webkit-scrollbar-track {
+  background: #EDE7DA;
+}
+html.light ::-webkit-scrollbar-thumb {
+  background: #AAB3C4;
+}
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #171717;
+}

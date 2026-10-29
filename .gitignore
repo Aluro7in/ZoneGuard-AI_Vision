@@ -1,0 +1,40 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+
+# ZoneGuard runtime data and generated artifacts
+data/*
+!data/.gitkeep
+*.log
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.gif
+
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Local archives and editor/system files
+zoneguard-image.tar
+*.tar.gz
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,8 @@
+{
+  "name": "ZoneGuard — Agentic Visual Safety Inspector",
+  "description": "AI-powered workplace video safety investigation platform turning surveillance footage into evidence-backed safety investigations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

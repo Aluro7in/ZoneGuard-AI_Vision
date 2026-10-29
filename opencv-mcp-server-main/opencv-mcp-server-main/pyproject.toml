@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "opencv-mcp-server"
+version = "0.1.2"
+authors = [
+    {name = "GongRzhe", email = "gongrzhe@gmail.com"},
+]
+description = "MCP server providing OpenCV computer vision capabilities"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "opencv-contrib-python>=4.12.0.88",
+    "numpy>2.2.6",
+    "mcp>=1.13.1",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/gongrzhe/opencv-mcp-server"
+"Bug Tracker" = "https://github.com/gongrzhe/opencv-mcp-server/issues"
+
+[project.scripts]
+opencv-mcp-server = "opencv_mcp_server.main:main"
