@@ -42,6 +42,8 @@ The primary detector is the OpenCV Zoo YOLOX INT8 ONNX asset under `models/`, wi
 
 Evaluation annotations use `evaluation/README.md` and are scored by `scripts/evaluate.py` with explicit event matching tolerance. An empty or unlabeled dataset returns `insufficient_data`; no metrics are invented. Use `python scripts/mcp_smoke.py` to test the MCP subprocess protocol.
 
+Watch this to understand the ZoneGuard Ai : https://vimeo.com/1244813272
+
 ## Deployment
 
 The supplied `DemoVideo.gif` was processed end to end with OpenCV 5.0.0 and YOLOX. It produced a real evidence branch and a `REVIEW` result because the clip did not establish an outside-to-inside transition. The current backend suite has 11 passing tests. No precision/recall metrics are claimed because the supplied workspace contains no manually labelled evaluation set. The API is container-ready for EC2 or ECS/Fargate; no AWS credentials or verified deployment are available.
