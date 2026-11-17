@@ -29,6 +29,7 @@ and deployment notes. `data/` is runtime-only local state. The two bundled
 OpenCV directories are independent reference repositories and are not runtime
 dependencies.
 
+### Frontend
 The frontend can be run separately with `npm install`, `npm run lint`,
 `npm run build`, and `npm run dev` from `frontend/`. Configure its backend
 target through `frontend/.env` using the safe placeholders in
